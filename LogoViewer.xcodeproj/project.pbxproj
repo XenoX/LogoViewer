@@ -54,14 +54,46 @@
 		C9C38D87208F0E4900975B31 /* LogoViewer */ = {
 			isa = PBXGroup;
 			children = (
+				C9C38D9D208F10FF00975B31 /* Model */,
+				C9C38D9B208F10F000975B31 /* Controller */,
+				C9C38D9C208F10F900975B31 /* View */,
+				C9C38D9A208F10CE00975B31 /* Supporting Files */,
+			);
+			path = LogoViewer;
+			sourceTree = "<group>";
+		};
+		C9C38D9A208F10CE00975B31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				C9C38D88208F0E4900975B31 /* AppDelegate.swift */,
-				C9C38D8A208F0E4900975B31 /* ViewController.swift */,
-				C9C38D8C208F0E4900975B31 /* Main.storyboard */,
 				C9C38D8F208F0E4B00975B31 /* Assets.xcassets */,
 				C9C38D91208F0E4B00975B31 /* LaunchScreen.storyboard */,
 				C9C38D94208F0E4B00975B31 /* Info.plist */,
 			);
-			path = LogoViewer;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9C38D9B208F10F000975B31 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9C38D8A208F0E4900975B31 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9C38D9C208F10F900975B31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9C38D8C208F0E4900975B31 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9C38D9D208F10FF00975B31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +106,7 @@
 				C9C38D81208F0E4900975B31 /* Sources */,
 				C9C38D82208F0E4900975B31 /* Frameworks */,
 				C9C38D83208F0E4900975B31 /* Resources */,
+				D5DEFFB72250F12F00D1DF2A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +162,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D5DEFFB72250F12F00D1DF2A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9C38D81208F0E4900975B31 /* Sources */ = {
@@ -281,14 +334,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LogoViewer/Info.plist;
+				DEVELOPMENT_TEAM = HB3HC8SJ9J;
+				INFOPLIST_FILE = "$(SRCROOT)/LogoViewer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.LogoViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -298,14 +352,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LogoViewer/Info.plist;
+				DEVELOPMENT_TEAM = HB3HC8SJ9J;
+				INFOPLIST_FILE = "$(SRCROOT)/LogoViewer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.LogoViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
