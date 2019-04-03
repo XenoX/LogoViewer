@@ -12,9 +12,23 @@
 		C9C38D8E208F0E4900975B31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C38D8C208F0E4900975B31 /* Main.storyboard */; };
 		C9C38D90208F0E4B00975B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C38D8F208F0E4B00975B31 /* Assets.xcassets */; };
 		C9C38D93208F0E4B00975B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C38D91208F0E4B00975B31 /* LaunchScreen.storyboard */; };
+		D5B2661F2254D49C00607635 /* LogoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2661E2254D49C00607635 /* LogoViewerTests.swift */; };
+		D5B266272254D60800607635 /* response.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B266262254D60800607635 /* response.png */; };
+		D5B266292254D62900607635 /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B266282254D62900607635 /* FakeResponseData.swift */; };
+		D5B2662B2254D81C00607635 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2662A2254D81C00607635 /* URLSessionFake.swift */; };
 		D5DEFFB92250FBDE00D1DF2A /* LogoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DEFFB82250FBDE00D1DF2A /* LogoService.swift */; };
 		D5DEFFBB2250FBFC00D1DF2A /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DEFFBA2250FBFC00D1DF2A /* Logo.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5B266212254D49C00607635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C38D7D208F0E4900975B31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C38D84208F0E4900975B31;
+			remoteInfo = LogoViewer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C9C38D85208F0E4900975B31 /* LogoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,12 +38,25 @@
 		C9C38D8F208F0E4B00975B31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9C38D92208F0E4B00975B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9C38D94208F0E4B00975B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5B2661C2254D49C00607635 /* LogoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B2661E2254D49C00607635 /* LogoViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewerTests.swift; sourceTree = "<group>"; };
+		D5B266202254D49C00607635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5B266262254D60800607635 /* response.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = response.png; sourceTree = "<group>"; };
+		D5B266282254D62900607635 /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		D5B2662A2254D81C00607635 /* URLSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
 		D5DEFFB82250FBDE00D1DF2A /* LogoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoService.swift; sourceTree = "<group>"; };
 		D5DEFFBA2250FBFC00D1DF2A /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C9C38D82208F0E4900975B31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B266192254D49C00607635 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				C9C38D87208F0E4900975B31 /* LogoViewer */,
+				D5B2661D2254D49C00607635 /* LogoViewerTests */,
 				C9C38D86208F0E4900975B31 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				C9C38D85208F0E4900975B31 /* LogoViewer.app */,
+				D5B2661C2254D49C00607635 /* LogoViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +131,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D5B2661D2254D49C00607635 /* LogoViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5B266262254D60800607635 /* response.png */,
+				D5B2661E2254D49C00607635 /* LogoViewerTests.swift */,
+				D5B266202254D49C00607635 /* Info.plist */,
+				D5B266282254D62900607635 /* FakeResponseData.swift */,
+				D5B2662A2254D81C00607635 /* URLSessionFake.swift */,
+			);
+			path = LogoViewerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,18 +164,40 @@
 			productReference = C9C38D85208F0E4900975B31 /* LogoViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D5B2661B2254D49C00607635 /* LogoViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B266252254D49C00607635 /* Build configuration list for PBXNativeTarget "LogoViewerTests" */;
+			buildPhases = (
+				D5B266182254D49C00607635 /* Sources */,
+				D5B266192254D49C00607635 /* Frameworks */,
+				D5B2661A2254D49C00607635 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5B266222254D49C00607635 /* PBXTargetDependency */,
+			);
+			name = LogoViewerTests;
+			productName = LogoViewerTests;
+			productReference = D5B2661C2254D49C00607635 /* LogoViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C9C38D7D208F0E4900975B31 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = OpenClassrooms;
 				TargetAttributes = {
 					C9C38D84208F0E4900975B31 = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					D5B2661B2254D49C00607635 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = C9C38D84208F0E4900975B31;
 					};
 				};
 			};
@@ -152,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				C9C38D84208F0E4900975B31 /* LogoViewer */,
+				D5B2661B2254D49C00607635 /* LogoViewerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +228,14 @@
 				C9C38D93208F0E4B00975B31 /* LaunchScreen.storyboard in Resources */,
 				C9C38D90208F0E4B00975B31 /* Assets.xcassets in Resources */,
 				C9C38D8E208F0E4900975B31 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B2661A2254D49C00607635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B266272254D60800607635 /* response.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +273,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5B266182254D49C00607635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B2661F2254D49C00607635 /* LogoViewerTests.swift in Sources */,
+				D5B2662B2254D81C00607635 /* URLSessionFake.swift in Sources */,
+				D5B266292254D62900607635 /* FakeResponseData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5B266222254D49C00607635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C38D84208F0E4900975B31 /* LogoViewer */;
+			targetProxy = D5B266212254D49C00607635 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C9C38D8C208F0E4900975B31 /* Main.storyboard */ = {
@@ -373,6 +463,51 @@
 			};
 			name = Release;
 		};
+		D5B266232254D49C00607635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HB3HC8SJ9J;
+				INFOPLIST_FILE = LogoViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xenox.LogoViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogoViewer.app/LogoViewer";
+			};
+			name = Debug;
+		};
+		D5B266242254D49C00607635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HB3HC8SJ9J;
+				INFOPLIST_FILE = LogoViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xenox.LogoViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogoViewer.app/LogoViewer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -390,6 +525,15 @@
 			buildConfigurations = (
 				C9C38D98208F0E4B00975B31 /* Debug */,
 				C9C38D99208F0E4B00975B31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5B266252254D49C00607635 /* Build configuration list for PBXNativeTarget "LogoViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B266232254D49C00607635 /* Debug */,
+				D5B266242254D49C00607635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

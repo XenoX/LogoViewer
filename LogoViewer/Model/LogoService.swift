@@ -12,6 +12,12 @@ class LogoService {
     static var shared = LogoService()
     private init() { }
 
+    private var session = URLSession(configuration: .default)
+
+    init(session: URLSession) {
+        self.session = session
+    }
+
     private var task: URLSessionTask?
     private let logoUrl = "https://logo.clearbit.com/"
 
@@ -19,7 +25,6 @@ class LogoService {
         let completeUrl = "\(logoUrl)\(domain)?size=512"
 
         let request = URLRequest(url: URL(string: completeUrl)!)
-        let session = URLSession(configuration: .default)
 
         task?.cancel()
         task = session.dataTask(with: request, completionHandler: { (data, response, error) in
